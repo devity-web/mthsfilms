@@ -23,12 +23,12 @@ const cards = [
     image: '/portfolio-4.jpg',
   },
   {
-    title: 'Igreja e Convento de Santo Agostinho',
-    lines: ['Leiria, Portugal'],
-    image: '/portfolio-5.jpg',
+    title: 'Praia da Polvoeira',
+    lines: ['Alcobaça, Portugal'],
+    video: 'https://www.youtube.com/watch?v=5zpP9v2iqEc',
   },
   {
-    title: 'O equipamento',
+    title: 'Equipamento',
     lines: ['DJI Mini 3 @ 4K30fps'],
     image: '/portfolio-6.jpg',
   },
@@ -36,7 +36,7 @@ const cards = [
 
 export function BentoSection() {
   return (
-    <section className="w-full px-5 flex flex-col justify-center items-center overflow-visible bg-transparent">
+    <section className="w-full flex flex-col justify-center items-center overflow-visible bg-transparent">
       <div className="w-full py-8 md:py-16 relative flex flex-col justify-start items-start gap-6">
         <div className="w-[547px] h-[938px] absolute top-[614px] left-[80px] origin-top-left rotate-[-33.39deg] bg-primary/10 blur-[130px] z-0" />
         <div className="self-stretch py-8 md:py-14 flex flex-col justify-center items-center gap-2 z-10">

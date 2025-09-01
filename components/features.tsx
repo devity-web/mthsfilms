@@ -66,7 +66,14 @@ const Features04Page = () => {
                   </AccordionTrigger>
                   <AccordionContent className="text-[17px] leading-relaxed text-muted-foreground">
                     {description}
-                    <div className="mt-6 mb-2 md:hidden aspect-video w-full bg-muted rounded-xl" />
+                    <Image
+                      src="/drone.jpg"
+                      alt="Drone"
+                      width={256}
+                      height={256}
+                      unoptimized
+                      className="w-full h-full bg-muted rounded-xl object-cover md:hidden"
+                    />
                   </AccordionContent>
                 </AccordionItem>
               ))}
@@ -80,7 +87,7 @@ const Features04Page = () => {
             width={256}
             height={256}
             unoptimized
-            className="md:block w-full h-full bg-muted rounded-xl object-cover"
+            className="hidden md:block w-full h-full bg-muted rounded-xl object-cover"
           />
         </div>
       </div>

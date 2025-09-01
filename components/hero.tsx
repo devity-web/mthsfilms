@@ -24,7 +24,7 @@ export function Hero() {
         />
       </div>
 
-      <div className="relative z-10 space-y-4 md:space-y-5 lg:space-y-6 mb-6 md:mb-7 lg:mb-9 max-w-md md:max-w-[500px] lg:max-w-[588px] mt-16 md:mt-[120px] lg:mt-[160px] px-4">
+      <div className="relative z-10 space-y-4 md:space-y-5 lg:space-y-6 mb-6 md:mb-7 lg:mb-9 max-w-md md:max-w-[500px] lg:max-w-[588px] mt-32 md:mt-[160px] px-4">
         <h1
           className={`${libre.className} text-foreground text-3xl md:text-4xl lg:text-6xl font-bold leading-tight`}
         >

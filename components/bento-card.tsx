@@ -3,10 +3,11 @@ import Image from 'next/image';
 interface BentoCardProps {
   title: string;
   lines: string[];
-  image: string;
+  image?: string;
+  video?: string;
 }
 
-export const BentoCard = ({title, lines, image}: BentoCardProps) => (
+export const BentoCard = ({title, lines, image, video}: BentoCardProps) => (
   <div className="overflow-hidden rounded-2xl border border-white/20 flex flex-col justify-start items-start relative">
     {/* Background with blur effect */}
     <div
@@ -33,13 +34,27 @@ export const BentoCard = ({title, lines, image}: BentoCardProps) => (
       </div>
     </div>
     <div className="-mt-0.5 z-10 h-72 w-full">
-      <Image
-        className="w-full h-full object-cover"
-        src={image}
-        width={300}
-        height={300}
-        alt="Portfolio"
-      />
+      {image && (
+        <Image
+          className="w-full h-full object-cover object-center"
+          src={image}
+          width={300}
+          height={300}
+          alt="Portfolio"
+          quality={100}
+        />
+      )}
+
+      {video && (
+        <iframe
+          src="https://www.youtube.com/embed/5zpP9v2iqEc?si=PmEIpg7rDdAStafR"
+          title="YouTube video player"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+          className="w-full h-full"
+          frameBorder={0}
+        ></iframe>
+      )}
     </div>
   </div>
 );
