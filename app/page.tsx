@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import {AnimatedSection} from '@/components/animated-section';
 import {BentoSection} from '@/components/bento';
+import Features04Page from '@/components/features';
 import {Hero} from '@/components/hero';
 
 export default function Home() {
@@ -34,14 +35,14 @@ export default function Home() {
         >
           <BentoSection />
         </AnimatedSection>
-        {/* <AnimatedSection
+        <AnimatedSection
           id="pricing-section"
-          className="relative z-10 py-16 max-w-[1320px] mx-auto mt-8 md:mt-16"
+          className="relative z-10 max-w-[1320px] mx-auto mt-8 md:mt-0"
           delay={0.2}
         >
-          <PricingSection />
+          <Features04Page />
         </AnimatedSection>
-        <AnimatedSection
+        {/* <AnimatedSection
           id="testimonials-section"
           className="relative z-10 max-w-[1320px] mx-auto mt-8 md:mt-16"
           delay={0.2}
